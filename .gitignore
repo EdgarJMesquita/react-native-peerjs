@@ -1,5 +1,5 @@
 peerjs/
-dist/
+# dist/
 node_modules/
 .idea
 

@@ -5,6 +5,7 @@ exec 2>&1
 rm -rf dist/ peerjs/
 git clone https://github.com/peers/peerjs peerjs
 cd peerjs
+git checkout v1.4.5
 git apply ../decoupling.diff
 ../node_modules/.bin/parcel build --no-source-maps lib/exports.ts -d ../dist --out-file peerjs.min.js
 cd ../
